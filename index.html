@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Илья Колпаков</div>
+      <ul class="nav-links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#experience">Навыки</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Илья Колпаков</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">Обо мне</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Навыки</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Проекты</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Img1.JPG" class = "profile-pic" alt="Профильное изображение Ильи Колпакова" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Илья Колпаков</h1>
+        <p class="section__text__p2">Frontend разработчик</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/РезюмеКИА.pdf')">
+            Загрузить резюме
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Контакты
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/telegram-svgrepo-com.svg"
+            alt="Мой профиль в Telegram"
+            class="icon"
+            onclick="location.href='https://t.me/KolIly'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Мой профиль на Github"
+            class="icon"
+            onclick="location.href='https://github.com/KolIlya'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">Обо мне</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/Png1.png" alt="Изображение обо мне" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p class="about-text">
+              Привет! Меня зовут Илья, и я занимаюсь фронтенд разработкой.
+            </p>
+            <p class="about-text">
+              Я интересуюсь веб-разработкой и постоянно стремлюсь расширять свои знания и навыки, которые можно оценить в моих работах. Также я целеустремленный и мотивированный, всегда готов к решению задач любой сложности. Эффективно работаю как в команде, так и самостоятельно.
+            </p>
+            <p class="about-text">
+              Я уверен, что мои знания, навыки и энтузиазм станут ценным активом для Вашей команды.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Иконка стрелки"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <h1 class="title">Навыки</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Фронтенд разработка</h2>
+            <div class="article-container">
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#html5"></use>
+                </svg>
+                <h3>HTML</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#css3"></use>
+                </svg>
+                <h3>CSS</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#scss"></use>
+                </svg>
+                <h3>SCSS</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#js"></use>
+                </svg>
+                <h3>JavaScript</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/InlineSprite.svg#vue"></use>
+                </svg>
+                <h3>Vue</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/InlineSprite.svg#react"></use>
+                </svg>
+                <h3>React</h3>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Общие инструменты и технологии</h2>
+            <div class="article-container">
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#jquery"></use>
+                </svg>
+                <h3>jQuery</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/InlineSprite.svg#nodejs"></use>
+                </svg>
+                <h3>NodeJS</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#gulp"></use>
+                </svg>
+                <h3>Gulp</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#webpack"></use>
+                </svg>
+                <h3>Webpack</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/InlineSprite.svg#npm"></use>
+                </svg>
+                <h3>NPM</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/InlineSprite.svg#yarn-seeklogo"></use>
+                </svg>
+                <h3>Yarn</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#github"></use>
+                </svg>
+                <h3>Git и Github</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/InlineSprite.svg#api-page-svgrepo-com"></use>
+                </svg>
+                <h3>API</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#bem"></use>
+                </svg>
+                <h3>БЭМ</h3>
+              </article>
+              <article>
+                <svg class="icon">
+                  <use xlink:href="./assets/sprite.svg#figma"></use>
+                </svg>
+                <h3>Figma</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Иконка стрелки"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">Проекты</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="slider1">
+            <div class="details-container color-container slide">
+              <div class="article-container">
+                <img
+                  src="./assets/Surfboard.png"
+                  alt="Проект Surfboard"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Surfboard</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/KolIlya/Surfboard-gulp'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://kolilya.github.io/Surfboard-gulp/dist/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container slide">
+              <div class="article-container">
+                <img
+                  src="./assets/Loftmovie.png"
+                  alt="Проект Loft Movie"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Loft Movie</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://codesandbox.io/p/sandbox/loftmovie-jp2kz9'"
+                >
+                  Codesandbox
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://jp2kz9.csb.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container slide">
+              <div class="article-container">
+                <img
+                  src="./assets/Gitogram.png"
+                  alt="Проект Гитограм"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Gitogram</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/KolIlya/gitogram'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://kolilya.github.io/gitogram/dist/#/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container slide">
+              <div class="article-container">
+                <img
+                  src="./assets/AirAsia.png"
+                  alt="Проект Air Asia"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Air Asia</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/KolIlya/Air-Asia'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://kolilya.github.io/Air-Asia/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Иконка стрелки"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <h1 class="title">Контакты</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/telegram-svgrepo-com.svg"
+            alt="Мой профиль в Telegram"
+            class="icon"
+            onclick="location.href='https://t.me/KolIly'"
+          />
+          <p><a href="https://t.me/KolIly">Telegram</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Мой профиль на Github"
+            class="icon"
+            onclick="location.href='https://github.com/KolIlya'"
+          />
+          <p><a href="https://github.com/KolIlya">Github</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.svg"
+            alt="Иконка электронной почты"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ilya.kolpakofff@gmail.com">ilya.kolpakofff@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/habr-svgrepo-com.svg"
+            alt="Мой профиль на Habr"
+            class="icon"
+            onclick="location.href='https://career.habr.com/ilya_kolpakov'"
+          />
+          <p><a href="https://career.habr.com/ilya_kolpakov">Habr</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/min-hh-white.svg"
+            alt="Мой профиль на HH.ru"
+            class="icon"
+            onclick="location.href='https://spb.hh.ru/resume/05afb362ff0c688dcd0039ed1f326b58683558'"
+          />
+          <p><a href="https://spb.hh.ru/resume/05afb362ff0c688dcd0039ed1f326b58683558">hh.ru</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#experience">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Илья Колпаков. Все права защищены.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
